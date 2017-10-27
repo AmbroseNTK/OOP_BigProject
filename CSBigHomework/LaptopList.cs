@@ -7,37 +7,17 @@ using System.IO;
 
 namespace CSBigHomework
 {
-    class LaptopList
+    class LaptopList : List<Laptop>
     {
-        private List<Laptop> list;
-        public LaptopList()
-        {
-            list = new List<Laptop>();
-        }
-        public void Add(Laptop laptop)
-        {
-            list.Add(laptop);
-        }
-        public void Remove(Laptop lap)
-        {
-            list.Remove(lap);
-        }
-        public Laptop GetLaptop(int index)
-        {
-            return list[index];
-        }
-        public List<Laptop> GetList()
-        {
-            return list;
-        }
+
         public void WriteToFile(string dir)
         {
             string data = "";
-            foreach(Laptop laptop in list)
+            foreach (Laptop laptop in this)
             {
-                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString()  + "\t" + laptop.Price + "\t" + laptop.QualityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
+                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QualityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
             }
-            using(StreamWriter writer =new StreamWriter(dir))
+            using (StreamWriter writer = new StreamWriter(dir))
             {
                 writer.Write(data);
             }
@@ -52,16 +32,25 @@ namespace CSBigHomework
                     {
                         string data = reader.ReadLine();
                         string[] listToken = data.Split('\t');
-                        list.Add(new Laptop(listToken[0], listToken[1], DateTime.Parse(listToken[2]), double.Parse(listToken[3]), int.Parse(listToken[4]), listToken[5]));
-                       
+                        this.Add(new Laptop(listToken[0], listToken[1], DateTime.Parse(listToken[2]), double.Parse(listToken[3]), int.Parse(listToken[4]), listToken[5]));
+
                     }
 
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+        }
+        public override string ToString()
+        {
+            string data = "";
+            foreach(Laptop laptop in this)
+            {
+                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QualityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
+            }
+            return data;
         }
     }
 }
