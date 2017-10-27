@@ -12,14 +12,10 @@ namespace CSBigHomework
 
         public void WriteToFile(string dir)
         {
-            string data = "";
-            foreach (Laptop laptop in this)
-            {
-                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QualityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
-            }
+            
             using (StreamWriter writer = new StreamWriter(dir))
             {
-                writer.Write(data);
+                writer.Write(ToString());
             }
         }
         public void ReadFromFile(string dir)
