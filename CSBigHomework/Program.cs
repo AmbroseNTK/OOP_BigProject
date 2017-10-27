@@ -28,7 +28,7 @@ namespace CSBigHomework
                         break;
                     case 1:
                         Laptop.PrintHeading();
-                        foreach(Laptop lap in listLaptop.GetList())
+                        foreach(Laptop lap in listLaptop)
                         {
                             lap.Output();
                         }
