@@ -36,12 +36,12 @@ namespace CSBigHomework
             get { return price; }
             set { price = value; }
         }
-        private int qualityOnHand;
+        private int quantity;
 
-        public int QualityOnHand
+        public int QuantityOnHand
         {
-            get { return qualityOnHand; }
-            set { qualityOnHand = value; }
+            get { return quantity; }
+            set { quantity = value; }
         }
         private string madeIn;
 
@@ -57,18 +57,30 @@ namespace CSBigHomework
             Name = String.Empty;
             PublishDate = DateTime.Now;
             Price = 0d;
-            QualityOnHand = 0;
+            QuantityOnHand = 0;
             MadeIn = Country.Unknown;
         }
-        public Laptop(string sku, string name, DateTime publishDate, double price, int qualityOnHand, string madeIn)
+        /// <summary>
+        /// Create new laptop with all properties
+        /// </summary>
+        /// <param name="sku">Product ID</param>
+        /// <param name="name">Laptop's name</param>
+        /// <param name="publishDate">Published date</param>
+        /// <param name="price">Laptop's price</param>
+        /// <param name="quantity">Laptop quantity in the store</param>
+        /// <param name="madeIn">Made in</param>
+        public Laptop(string sku, string name, DateTime publishDate, double price, int quantity, string madeIn)
         {
             Sku = sku;
             Name = name;
             PublishDate = publishDate;
             Price = price;
-            QualityOnHand = qualityOnHand;
+            QuantityOnHand = quantity;
             MadeIn = madeIn;
         }
+        /// <summary>
+        /// Set new laptop's data
+        /// </summary>
         public void Input()
         {
             Console.WriteLine("Enter Sku: ");
@@ -80,22 +92,34 @@ namespace CSBigHomework
             Console.WriteLine("Enter Price: ");
             Price = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter QOH: ");
-            QualityOnHand = int.Parse(Console.ReadLine());
+            QuantityOnHand = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Made in : ");
             MadeIn = Console.ReadLine();
 
         }
+        /// <summary>
+        /// Print all information of this laptop
+        /// </summary>
         public void Output()
         {
-            Console.WriteLine("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QualityOnHand, MadeIn);
+            Console.WriteLine("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
         }
-        public string ToString()
+        /// <summary>
+        /// Get string which was formatted
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
         {
-            return String.Format("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QualityOnHand, MadeIn);
+            return String.Format("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
         }
-        public static void PrintHeading()
+        /// <summary>
+        /// Print header of your list
+        /// </summary>
+        public static void PrintHeader()
         {
+            Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", "SKU", "Name", "Publish Date", "Price", "QOH", "Made in");
+            Console.BackgroundColor = ConsoleColor.Black;
         }
     }
 }

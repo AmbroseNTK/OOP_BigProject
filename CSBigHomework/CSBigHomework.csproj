@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Country.cs" />
+    <Compile Include="FileListViewer.cs" />
     <Compile Include="Laptop.cs" />
     <Compile Include="LaptopList.cs" />
     <Compile Include="Menu.cs" />

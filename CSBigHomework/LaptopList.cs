@@ -9,7 +9,19 @@ namespace CSBigHomework
 {
     class LaptopList : List<Laptop>
     {
-
+        /// <summary>
+        /// Create new laptop
+        /// </summary>
+        public void AddNewLaptop()
+        {
+            Laptop laptop = new Laptop();
+            laptop.Input();
+            this.Add(laptop);
+        }
+        /// <summary>
+        /// Write all list's data to a file
+        /// </summary>
+        /// <param name="dir">File's directory</param>
         public void WriteToFile(string dir)
         {
             
@@ -18,7 +30,11 @@ namespace CSBigHomework
                 writer.Write(ToString());
             }
         }
-        public void ReadFromFile(string dir)
+        /// <summary>
+        /// Add exist data from file to this list
+        /// </summary>
+        /// <param name="dir">File's directory</param>
+        public void AddFromFile(string dir)
         {
             try
             {
@@ -39,12 +55,19 @@ namespace CSBigHomework
                 Console.WriteLine(e.Message);
             }
         }
+        /// <summary>
+        /// Show all data in this list
+        /// </summary>
+        public void Output()
+        {
+            Console.WriteLine(this.ToString());
+        }
         public override string ToString()
         {
             string data = "";
             foreach(Laptop laptop in this)
             {
-                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QualityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
+                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QuantityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
             }
             return data;
         }
