@@ -6,28 +6,14 @@ using System.Threading.Tasks;
 
 namespace CSBigHomework
 {
-    class Laptop
+    class Laptop : Product
     {
-        private string sku;
-        //Product's id
-        public string Sku
-        {
-            get { return sku; }
-            set { sku = value; }
-        }
-        private string name;
+        private DateTime mFG;
 
-        public string Name
+        public DateTime MFG
         {
-            get { return name; }
-            set { name = value; }
-        }
-        private DateTime publishDate;
-
-        public DateTime PublishDate
-        {
-            get { return publishDate; }
-            set { publishDate = value; }
+            get { return mFG; }
+            set { mFG = value; }
         }
         private double price;
 
@@ -53,9 +39,8 @@ namespace CSBigHomework
 
         public Laptop()
         {
-            Sku = String.Empty;
-            Name = String.Empty;
-            PublishDate = DateTime.Now;
+
+            MFG = DateTime.Now;
             Price = 0d;
             QuantityOnHand = 0;
             MadeIn = Country.Unknown;
@@ -70,10 +55,9 @@ namespace CSBigHomework
         /// <param name="quantity">Laptop quantity in the store</param>
         /// <param name="madeIn">Made in</param>
         public Laptop(string sku, string name, DateTime publishDate, double price, int quantity, string madeIn)
+            : base(sku, name)
         {
-            Sku = sku;
-            Name = name;
-            PublishDate = publishDate;
+            MFG = publishDate;
             Price = price;
             QuantityOnHand = quantity;
             MadeIn = madeIn;
@@ -81,14 +65,11 @@ namespace CSBigHomework
         /// <summary>
         /// Set new laptop's data
         /// </summary>
-        public void Input()
+        public override void Input()
         {
-            Console.WriteLine("Enter Sku: ");
-            Sku = Console.ReadLine();
-            Console.WriteLine("Enter product's name: ");
-            Name = Console.ReadLine();
-            Console.WriteLine("Enter Publish date: ");
-            PublishDate = DateTime.Parse(Console.ReadLine());
+            base.Input();
+            Console.WriteLine("Enter MFG date: ");
+            MFG = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Enter Price: ");
             Price = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter QOH: ");
@@ -100,9 +81,10 @@ namespace CSBigHomework
         /// <summary>
         /// Print all information of this laptop
         /// </summary>
-        public void Output()
+        public override void Output()
         {
-            Console.WriteLine("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
+            //Console.WriteLine("|{2,15}|{3,8}|{4,5}|{5,10}|", PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
+            Console.WriteLine(ToString());
         }
         /// <summary>
         /// Get string which was formatted
@@ -110,7 +92,7 @@ namespace CSBigHomework
         /// <returns></returns>
         public override string ToString()
         {
-            return String.Format("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", Sku, Name, PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
+            return base.ToString() + String.Format("|{0,15}|{1,8}|{2,5}|{3,10}", MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn);
         }
         /// <summary>
         /// Print header of your list
@@ -118,8 +100,29 @@ namespace CSBigHomework
         public static void PrintHeader()
         {
             Console.BackgroundColor = ConsoleColor.Red;
-            Console.WriteLine("|{0,7}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}|", "SKU", "Name", "Publish Date", "Price", "QOH", "Made in");
+            Console.WriteLine("|{0,12}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}", "SKU", "Name", "Publish Date", "Price", "QOH", "Made in");
             Console.BackgroundColor = ConsoleColor.Black;
         }
-    }
+        /// <summary>
+        /// Show the describability of this laptop
+        /// </summary>
+        public override void Describe()
+        {
+            Console.WriteLine(Name + " is the best Laptop");
+        }
+        /// <summary>
+        /// Calculating total payment
+        /// </summary>
+        /// <param name="discountPercent">Discount percent</param>
+        /// <returns></returns>
+        public override double TotalPayment(double discountPercent)
+        {
+            return price - price * discountPercent;
+        }
+
+        public override void ShowDate()
+        {
+            Console.WriteLine("Date = " + mFG);
+        }
+    } 
 }

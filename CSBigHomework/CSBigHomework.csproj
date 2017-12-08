@@ -47,6 +47,7 @@
     <Compile Include="Laptop.cs" />
     <Compile Include="LaptopList.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,7 +9,6 @@ namespace CSBigHomework
 {
     class Program
     {
-        //List of laptop
         public static LaptopList listLaptop;
         static void Main(string[] args)
         {
@@ -51,7 +50,7 @@ namespace CSBigHomework
         {
             Console.Clear();
             bool isExit = false;
-            Menu.printTitle(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\Title.txt") + "\t\tWelcome to Kiet's Laptop Shop\nPlease select:\n");
+            //Menu.printTitle(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "\\Title.txt") + "\t\tWelcome to Kiet's Laptop Shop\nPlease select:\n");
             FileListViewer viewer = new FileListViewer(AppDomain.CurrentDomain.BaseDirectory);
             while (!isExit)
             {
@@ -79,6 +78,20 @@ namespace CSBigHomework
                         Console.WriteLine("Enter directory: ");
                         viewer = new FileListViewer(AppDomain.CurrentDomain.BaseDirectory);
                         listLaptop.AddFromFile(viewer.Open());
+                        break;
+                    case 4:
+                        List<string> listLaptopStr = new List<string>();
+                        foreach (Laptop lap in listLaptop)
+                        {
+                            listLaptopStr.Add(lap.ToString());
+                        }
+                        listLaptopStr.Add("CANCEL DELETE FUNCTION !!!");
+                        Laptop.PrintHeader();
+                        int ind = Menu.printMenu("Deletion list", listLaptopStr, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow);
+                        if (ind == listLaptopStr.Count - 1)
+                            break;
+                        listLaptop.RemoveAt(ind);
+
                         break;
                     case 6:
                         return;

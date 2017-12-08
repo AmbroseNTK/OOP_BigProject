@@ -67,7 +67,7 @@ namespace CSBigHomework
             string data = "";
             foreach(Laptop laptop in this)
             {
-                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.PublishDate.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QuantityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
+                data += laptop.Sku + "\t" + laptop.Name + "\t" + laptop.MFG.ToShortDateString() + "\t" + laptop.Price + "\t" + laptop.QuantityOnHand + "\t" + laptop.MadeIn + Environment.NewLine;
             }
             return data;
         }
