@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+/// <summary>
+/// Project OOP - Quản lý laptop
+/// </summary>
 namespace CSBigHomework
 {
     class Program
@@ -21,7 +24,7 @@ namespace CSBigHomework
             do
             {
                 Menu.Output();
-                switch (Menu.GetChoise())
+                switch (Menu.GetChoice())
                 {
                     case 1:
                         listLaptop.AddNewLaptop();
@@ -54,7 +57,7 @@ namespace CSBigHomework
             FileListViewer viewer = new FileListViewer(AppDomain.CurrentDomain.BaseDirectory);
             while (!isExit)
             {
-                switch (Menu.printMenu("Function Menu", new List<string> { "Add new Laptop", "Show List", "Save to file", "Load from file", "Delete a laptop", "Buy a laptop", "Exit" }, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow))
+                switch (Menu.printMenu("Function Menu", new List<string> { "Add new Laptop", "Show List", "Save to file", "Load from file", "Delete a laptop", "Edit data","Search","Sell", "Exit" }, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow))
                 {
                     case 0:
                         Laptop laptop = new Laptop();
@@ -91,9 +94,53 @@ namespace CSBigHomework
                         if (ind == listLaptopStr.Count - 1)
                             break;
                         listLaptop.RemoveAt(ind);
-
+                        break;
+                    case 5:
+                        listLaptopStr = new List<string>();
+                        foreach (Laptop lap in listLaptop)
+                        {
+                            listLaptopStr.Add(lap.ToString());
+                        }
+                        listLaptopStr.Add("CANCEL EDIT FUNCTION !!!");
+                        Laptop.PrintHeader();
+                        ind = Menu.printMenu("Edit list", listLaptopStr, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow);
+                        if (ind == listLaptopStr.Count - 1)
+                            break;
+                        Console.Write("SKU: Replace " + listLaptop[ind].Sku + " to: ");
+                        listLaptop[ind].Sku = Console.ReadLine();
+                        Console.Write("Name: Replace " + listLaptop[ind].Name + " to: ");
+                        listLaptop[ind].Name = Console.ReadLine();
+                        Console.Write("MFG: Replace " + listLaptop[ind].MFG + " to: ");
+                        listLaptop[ind].MFG = DateTime.Parse(Console.ReadLine());
+                        Console.Write("Price: Replace " + listLaptop[ind].Price + " to: ");
+                        listLaptop[ind].Price = double.Parse(Console.ReadLine());
+                        Console.Write("Quantity on hand: Replace " + listLaptop[ind].QuantityOnHand + " to: ");
+                        listLaptop[ind].QuantityOnHand = int.Parse(Console.ReadLine());
+                        Console.Write("Made in: Replace " + listLaptop[ind].MadeIn + " to: ");
+                        listLaptop[ind].MadeIn = Console.ReadLine();
                         break;
                     case 6:
+                        Console.WriteLine("Enter search pattern: ");
+                        Laptop key = new Laptop();
+                        key.Input();
+                        Console.WriteLine("Search result:");
+                        Laptop.PrintHeader();
+                        Console.BackgroundColor = ConsoleColor.Blue;
+                        LaptopList result = listLaptop.Search(key);
+                        foreach (Laptop lap in result)
+                        {
+                            lap.Output();
+                        }
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        
+                        break;
+                    case 7:
+
+                        break;
+                    case 8:
+
+                        break;
+                    case 9:
                         return;
                 }
             }

@@ -69,11 +69,17 @@ namespace CSBigHomework
         {
             base.Input();
             Console.WriteLine("Enter MFG date: ");
-            MFG = DateTime.Parse(Console.ReadLine());
+            DateTime.TryParse(Console.ReadLine(),out mFG);
             Console.WriteLine("Enter Price: ");
-            Price = double.Parse(Console.ReadLine());
+            if(!double.TryParse(Console.ReadLine(),out price))
+            {
+                price = double.NaN;
+            }
             Console.WriteLine("Enter QOH: ");
-            QuantityOnHand = int.Parse(Console.ReadLine());
+            if(!int.TryParse(Console.ReadLine(),out quantity))
+            {
+                quantity = -1;
+            }
             Console.WriteLine("Enter Made in : ");
             MadeIn = Console.ReadLine();
 
@@ -83,8 +89,8 @@ namespace CSBigHomework
         /// </summary>
         public override void Output()
         {
-            //Console.WriteLine("|{2,15}|{3,8}|{4,5}|{5,10}|", PublishDate.ToShortDateString(), Price, QuantityOnHand, MadeIn);
-            Console.WriteLine(ToString());
+            Console.WriteLine(String.Format("|{0,12}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}",Sku,Name, MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn));
+            //Console.WriteLine(ToString());
         }
         /// <summary>
         /// Get string which was formatted
@@ -92,7 +98,7 @@ namespace CSBigHomework
         /// <returns></returns>
         public override string ToString()
         {
-            return base.ToString() + String.Format("|{0,15}|{1,8}|{2,5}|{3,10}", MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn);
+            return base.ToString() + String.Format("|{0}|{1}|{2}|{3}", MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn);
         }
         /// <summary>
         /// Print header of your list
@@ -123,6 +129,34 @@ namespace CSBigHomework
         public override void ShowDate()
         {
             Console.WriteLine("Date = " + mFG);
+        }
+        public string ToRegExpression()
+        {
+            string expr = "";
+            if (Sku == "")
+                expr += "(.*?)\\|";
+            else
+                expr += Sku + "\\|";
+            if (Name == "")
+                expr += "(.*?)\\|";
+            else
+                expr += Name + "\\|";
+            if (MFG.Year == 1)
+                expr += "(.*?)\\|";
+            else
+                expr += MFG.ToShortDateString()+"\\|";
+            expr += Price+"\\|";
+            if (QuantityOnHand == -1)
+                expr += "(.*?)\\|";
+            else
+                expr += QuantityOnHand+"\\|";
+            if (MadeIn == "")
+                expr += "(.*?)";
+            else 
+                expr += MadeIn;
+
+            expr = expr.Replace("NaN", "(.*?)");
+            return expr;
         }
     } 
 }

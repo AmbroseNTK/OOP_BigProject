@@ -34,20 +34,20 @@ namespace CSBigHomework
         /// Basic get choise
         /// </summary>
         /// <returns></returns>
-        public static int GetChoise()
+        public static int GetChoice()
         {
             Console.WriteLine("Please select an operation (1-4):");
-            int choise = 0;
+            int choice = 0;
             do
             {
-                while (!int.TryParse(Console.ReadLine(), out choise))
+                while (!int.TryParse(Console.ReadLine(), out choice))
                 {
                     Console.WriteLine("Input invalid !!!");
                     Console.WriteLine("Please select an operation (1-4):");
                 }
 
-            } while (choise < 1 || choise > 4);
-            return choise;
+            } while (choice < 1 || choice > 4);
+            return choice;
             
         }
         /// <summary>

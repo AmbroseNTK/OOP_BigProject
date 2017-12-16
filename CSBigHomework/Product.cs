@@ -41,11 +41,11 @@ namespace CSBigHomework
         }
         public virtual void Output()
         {
-            Console.WriteLine(ToString());
+            Console.WriteLine(String.Format("|{0,12}|{1,15}", sku, name));
         }
         public override string ToString()
         {
-            return String.Format("|{0,12}|{1,15}", sku, name);
+            return String.Format("{0}|{1}", sku, name);
         }
         public abstract void Describe();
         public abstract double TotalPayment(double discountPercent);
