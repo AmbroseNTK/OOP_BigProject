@@ -8,10 +8,13 @@ using System.Text.RegularExpressions;
 
 namespace CSBigHomework
 {
+    /// <summary>
+    /// Danh sách Laptop
+    /// </summary>
     class LaptopList : List<Laptop>
     {
         /// <summary>
-        /// Create new laptop
+        /// Tạo và nhập một laptop
         /// </summary>
         public void AddNewLaptop()
         {
@@ -20,9 +23,9 @@ namespace CSBigHomework
             this.Add(laptop);
         }
         /// <summary>
-        /// Write all list's data to a file
+        /// Xuất tất cả danh sách vào file
         /// </summary>
-        /// <param name="dir">File's directory</param>
+        /// <param name="dir">Đường dẫn file</param>
         public void WriteToFile(string dir)
         {
             
@@ -32,11 +35,12 @@ namespace CSBigHomework
             }
         }
         /// <summary>
-        /// Add exist data from file to this list
+        /// Đọc dữ liệu từ file và tạo đối tượng thêm vào danh sách
         /// </summary>
-        /// <param name="dir">File's directory</param>
+        /// <param name="dir">Đường dẫn file</param>
         public void AddFromFile(string dir)
         {
+            this.Clear();
             try
             {
                 using (StreamReader reader = new StreamReader(dir))
@@ -57,12 +61,16 @@ namespace CSBigHomework
             }
         }
         /// <summary>
-        /// Show all data in this list
+        /// Xem tất cả dữ liệu trong danh sách
         /// </summary>
         public void Output()
         {
             Console.WriteLine(this.ToString());
         }
+        /// <summary>
+        /// Tạo chuỗi dữ liệu
+        /// </summary>
+        /// <returns>Chuỗi dữ liệu</returns>
         public override string ToString()
         {
             string data = "";
@@ -72,6 +80,11 @@ namespace CSBigHomework
             }
             return data;
         }
+        /// <summary>
+        /// Biến đổi một List của Laptop thành LaptopList
+        /// </summary>
+        /// <param name="list">List của Laptop</param>
+        /// <returns>LaptopList tương ứng</returns>
         public LaptopList ToList(List<Laptop> list)
         {
             LaptopList laptopList = new LaptopList();
@@ -81,6 +94,11 @@ namespace CSBigHomework
             }
             return laptopList;
         }
+        /// <summary>
+        /// Tìm kiếm Laptop dựa trên tiêu chí của key
+        /// </summary>
+        /// <param name="key">Laptop mẫu dùng để so sánh</param>
+        /// <returns>Kết quả các laptop tìm được</returns>
         public LaptopList Search(Laptop key)
         {
             LaptopList result = new LaptopList();

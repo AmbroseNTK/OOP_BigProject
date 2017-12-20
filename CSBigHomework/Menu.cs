@@ -9,7 +9,7 @@ namespace CSBigHomework
     class Menu
     {
         /// <summary>
-        /// Print menu's title
+        /// In tiêu đề menu
         /// </summary>
         public static void PrintHeader()
         {
@@ -21,7 +21,7 @@ namespace CSBigHomework
             Console.WriteLine(title);
         }
         /// <summary>
-        /// Show basic output
+        /// Xem chế độ cơ bản
         /// </summary>
         public static void Output()
         {
@@ -31,9 +31,9 @@ namespace CSBigHomework
             Console.WriteLine("4. Exit");
         }
         /// <summary>
-        /// Basic get choise
+        /// Nhận dữ liệu nhập vào đơn giản
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Chỉ số</returns>
         public static int GetChoice()
         {
             Console.WriteLine("Please select an operation (1-4):");
@@ -51,15 +51,15 @@ namespace CSBigHomework
             
         }
         /// <summary>
-        /// Create choosable menu
+        /// Tạo menu có giao diện lựa chọn
         /// </summary>
-        /// <param name="title">Menu's title</param>
-        /// <param name="menuItem">Menu's list</param>
-        /// <param name="foreColor">Normal fore color</param>
-        /// <param name="backColor">Normal background color</param>
-        /// <param name="highlightColor">Highlight color 1</param>
-        /// <param name="highlightColor2">Highlight color 2</param>
-        /// <returns></returns>
+        /// <param name="title">Tiêu đề menu</param>
+        /// <param name="menuItem">Danh sách các lựa chọn</param>
+        /// <param name="foreColor">Màu cơ bản của menu</param>
+        /// <param name="backColor">Màu nền cơ bản của menu</param>
+        /// <param name="highlightColor">Màu in đậm 1</param>
+        /// <param name="highlightColor2">Màu in đậm 2</param>
+        /// <returns>Lựa chọn của người dùng</returns>
         public static int printMenu(string title, List<string> menuItem,ConsoleColor foreColor,ConsoleColor backColor,ConsoleColor highlightColor,ConsoleColor highlightColor2)
         {
             Console.WriteLine("Press Key Down and Key Up to select: ");

@@ -6,54 +6,81 @@ using System.Threading.Tasks;
 
 namespace CSBigHomework
 {
+    /// <summary>
+    /// Laptop
+    /// </summary>
     class Laptop : Product
     {
+        /// <summary>
+        /// Ngày sản xuất
+        /// </summary>
         private DateTime mFG;
-
+        /// <summary>
+        /// Ngày sản xuất
+        /// </summary>
         public DateTime MFG
         {
             get { return mFG; }
             set { mFG = value; }
         }
+        /// <summary>
+        ///Giá
+        /// </summary>
         private double price;
-
+        /// <summary>
+        /// Giá
+        /// </summary>
         public double Price
         {
             get { return price; }
             set { price = value; }
         }
+        /// <summary>
+        /// Số lượng tồn kho
+        /// </summary>
         private int quantity;
-
+        /// <summary>
+        /// Số lượng tồn kho
+        /// </summary>
         public int QuantityOnHand
         {
             get { return quantity; }
             set { quantity = value; }
         }
+
+        /// <summary>
+        /// Xuất xứ
+        /// </summary>
         private string madeIn;
 
+        /// <summary>
+        /// Xuất xứ
+        /// </summary>
         public string MadeIn
         {
             get { return madeIn; }
             set { madeIn = value; }
         }
-
+        /// <summary>
+        /// Tạo đối tượng mới
+        /// </summary>
         public Laptop()
         {
 
             MFG = DateTime.Now;
             Price = 0d;
             QuantityOnHand = 0;
-            MadeIn = Country.Unknown;
+            MadeIn = "Unknown";
         }
         /// <summary>
-        /// Create new laptop with all properties
+        /// Tạo đối tượng mới với đầy đủ thuộc tính
         /// </summary>
-        /// <param name="sku">Product ID</param>
-        /// <param name="name">Laptop's name</param>
-        /// <param name="publishDate">Published date</param>
-        /// <param name="price">Laptop's price</param>
-        /// <param name="quantity">Laptop quantity in the store</param>
-        /// <param name="madeIn">Made in</param>
+        /// <param name="sku">Số SKU</param>
+        /// <param name="name">Tên</param>
+        /// <param name="publishDate">Ngày sản xuất</param>
+        /// <param name="price">Giá thành</param>
+        /// <param name="quantity">Số lượng tồn kho</param>
+        /// <param name="madeIn">Xuất xứ</param>
         public Laptop(string sku, string name, DateTime publishDate, double price, int quantity, string madeIn)
             : base(sku, name)
         {
@@ -63,7 +90,7 @@ namespace CSBigHomework
             MadeIn = madeIn;
         }
         /// <summary>
-        /// Set new laptop's data
+        /// Nhập dữ liệu cho laptop
         /// </summary>
         public override void Input()
         {
@@ -85,23 +112,23 @@ namespace CSBigHomework
 
         }
         /// <summary>
-        /// Print all information of this laptop
+        /// In tất cả dữ liệu của laptop theo định dạng có sẵn
         /// </summary>
         public override void Output()
         {
             Console.WriteLine(String.Format("|{0,12}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}",Sku,Name, MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn));
-            //Console.WriteLine(ToString());
+           
         }
         /// <summary>
-        /// Get string which was formatted
+        /// Tạo chuỗi dữ liệu của các thuộc tính
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Chuỗi dữ liệu</returns>
         public override string ToString()
         {
             return base.ToString() + String.Format("|{0}|{1}|{2}|{3}", MFG.ToShortDateString(), Price, QuantityOnHand, MadeIn);
         }
         /// <summary>
-        /// Print header of your list
+        /// Tạo tiêu đề
         /// </summary>
         public static void PrintHeader()
         {
@@ -110,26 +137,32 @@ namespace CSBigHomework
             Console.BackgroundColor = ConsoleColor.Black;
         }
         /// <summary>
-        /// Show the describability of this laptop
+        /// Xem mô tả của laptop
         /// </summary>
         public override void Describe()
         {
             Console.WriteLine(Name + " is the best Laptop");
         }
         /// <summary>
-        /// Calculating total payment
+        /// Tính tổng tiền thanh toán
         /// </summary>
-        /// <param name="discountPercent">Discount percent</param>
-        /// <returns></returns>
+        /// <param name="discountPercent">Phần trăm giảm giá</param>
+        /// <returns>Giá thành tiền</returns>
         public override double TotalPayment(double discountPercent)
         {
             return price - price * discountPercent;
         }
-
+        /// <summary>
+        /// Xem ngày sản xuất
+        /// </summary>
         public override void ShowDate()
         {
             Console.WriteLine("Date = " + mFG);
         }
+        /// <summary>
+        /// Phát sinh biểu thức chính quy phục vụ tìm kiếm của đối tượng
+        /// </summary>
+        /// <returns>Biểu thức chính quy</returns>
         public string ToRegExpression()
         {
             string expr = "";
