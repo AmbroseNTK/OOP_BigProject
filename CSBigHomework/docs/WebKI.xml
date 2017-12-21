@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddFromFile method" Url="html/fece9bcf-fe2f-5d03-855c-0dc1056f8b00.htm" />
+  <HelpKINode Title="AddNewLaptop method" Url="html/4d331434-c516-64e2-f37b-40c0c5123799.htm" />
+  <HelpKINode Title="AdvanceMode method" Url="html/c12b9397-9f44-6e1d-9775-5bb25d33bbd4.htm" />
+  <HelpKINode Title="Cart property" Url="html/4f60026a-0793-c8a2-5077-f8e4326a3591.htm" />
+  <HelpKINode Title="CartItem class">
+    <HelpKINode Title="CartItem Class" Url="html/7a4d5b31-1ddb-75d4-ddc9-b62941450986.htm" />
+    <HelpKINode Title="about CartItem class" Url="html/7a4d5b31-1ddb-75d4-ddc9-b62941450986.htm" />
+    <HelpKINode Title="constructor" Url="html/4bbdf235-ad3c-eb1b-7c27-388b9298cc17.htm" />
+    <HelpKINode Title="methods" Url="html/3fdde92d-12ae-09cc-e82f-263a2e7d0784.htm" />
+    <HelpKINode Title="properties" Url="html/2c69c939-13b2-af7f-0895-f41f60331db0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CartItem.CartItem constructor" Url="html/4bbdf235-ad3c-eb1b-7c27-388b9298cc17.htm" />
+  <HelpKINode Title="CartItem.GetOutput method" Url="html/4c063d5e-bec6-7550-0dc0-57e641a930e7.htm" />
+  <HelpKINode Title="CartItem.GetPrintHeader method" Url="html/b43b34ec-ee3e-49a9-f0e3-c4471a809a11.htm" />
+  <HelpKINode Title="CartItem.Output method" Url="html/6114d6ff-d182-936d-5b09-d8c1158bc6d8.htm" />
+  <HelpKINode Title="CartItem.PrintHeader method" Url="html/0b62d730-1f91-1ca0-8d9f-7d581afe425e.htm" />
+  <HelpKINode Title="CartItem.Quantity property" Url="html/74e42542-9aaa-9ed1-03e6-aac193393423.htm" />
+  <HelpKINode Title="CartItem.ToString method" Url="html/843262a1-3708-3122-0290-1060e7d211dd.htm" />
+  <HelpKINode Title="CSBigHomework namespace" Url="html/546ad338-611a-5c99-e552-7be0d57694ca.htm" />
+  <HelpKINode Title="CSBigHomework.CartItem class" Url="html/7a4d5b31-1ddb-75d4-ddc9-b62941450986.htm" />
+  <HelpKINode Title="CSBigHomework.FileListViewer class" Url="html/33336343-75c1-4993-7fc6-7c2fc0b9ddec.htm" />
+  <HelpKINode Title="CSBigHomework.IProduct interface" Url="html/b2c112bb-e963-1c00-520c-67278f3b7e24.htm" />
+  <HelpKINode Title="CSBigHomework.Laptop class" Url="html/be5d6b3a-b6cb-0405-74f3-052ff04c4373.htm" />
+  <HelpKINode Title="CSBigHomework.LaptopList class" Url="html/1fff8453-5202-b267-8df7-1f22089d0443.htm" />
+  <HelpKINode Title="CSBigHomework.Menu class" Url="html/bb17d9c3-098e-e693-6ff9-0de1d14adacf.htm" />
+  <HelpKINode Title="CSBigHomework.Product class" Url="html/3ac10482-e2ab-f39e-7f7d-b6dafee5ddf8.htm" />
+  <HelpKINode Title="CSBigHomework.Program class" Url="html/6722985f-a126-9dd8-21c4-c573a9f277a5.htm" />
+  <HelpKINode Title="CSBigHomework.Transaction class" Url="html/577982db-bc9a-9f48-ab89-0b378fc91185.htm" />
+  <HelpKINode Title="Describe method">
+    <HelpKINode Title="Laptop.Describe Method " Url="html/de986a29-8b15-3177-f5af-7888e5b949b7.htm" />
+    <HelpKINode Title="Product.Describe Method " Url="html/fb934489-c596-720d-45b7-21033197f501.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Distribute method">
+    <HelpKINode Title="IProduct.Distribute Method " Url="html/e6ce247f-6235-4844-21dc-6dd87debb6aa.htm" />
+    <HelpKINode Title="Laptop.Distribute Method " Url="html/5544fe9b-98ff-a34e-0447-f2d7e123a1f7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EndTransaction method" Url="html/8bab5c6b-6dac-b55f-24d8-bbd5c4653dff.htm" />
+  <HelpKINode Title="ExportToFile method" Url="html/6bfa7376-25c5-4452-c52d-5483924f63ab.htm" />
+  <HelpKINode Title="FileListViewer class">
+    <HelpKINode Title="FileListViewer Class" Url="html/33336343-75c1-4993-7fc6-7c2fc0b9ddec.htm" />
+    <HelpKINode Title="about FileListViewer class" Url="html/33336343-75c1-4993-7fc6-7c2fc0b9ddec.htm" />
+    <HelpKINode Title="constructor" Url="html/a9aba44c-bbd2-a846-b996-85455f4fe135.htm" />
+    <HelpKINode Title="methods" Url="html/7f88cd53-430b-0788-f498-569413bac568.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileListViewer.FileListViewer constructor" Url="html/a9aba44c-bbd2-a846-b996-85455f4fe135.htm" />
+  <HelpKINode Title="FileListViewer.Open method" Url="html/5006db30-21a1-b8cd-b7f5-831b553efe9a.htm" />
+  <HelpKINode Title="GetBasePrice method">
+    <HelpKINode Title="IProduct.GetBasePrice Method " Url="html/c1cc22ca-ba56-27f5-56e5-95cd7d071da6.htm" />
+    <HelpKINode Title="Laptop.GetBasePrice Method " Url="html/e16fc841-ca6a-fe37-157c-676455a0e77c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetChoice method" Url="html/656b2638-def9-a504-d652-906ccd162596.htm" />
+  <HelpKINode Title="GetOutput method">
+    <HelpKINode Title="CartItem.GetOutput Method " Url="html/4c063d5e-bec6-7550-0dc0-57e641a930e7.htm" />
+    <HelpKINode Title="Laptop.GetOutput Method " Url="html/b9357aec-d931-57c8-fbfc-ed54a81ba51b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetPrintHeader method" Url="html/b43b34ec-ee3e-49a9-f0e3-c4471a809a11.htm" />
+  <HelpKINode Title="GetReceipt method" Url="html/a5be9fe9-81e1-5b10-04cb-5ecbf05e0906.htm" />
+  <HelpKINode Title="Input method">
+    <HelpKINode Title="Laptop.Input Method " Url="html/2faae040-d4e9-78d7-1cce-4aac19556258.htm" />
+    <HelpKINode Title="Product.Input Method " Url="html/ed9db103-0544-0461-6eb8-2cf1ecfb909b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IProduct interface">
+    <HelpKINode Title="IProduct Interface" Url="html/b2c112bb-e963-1c00-520c-67278f3b7e24.htm" />
+    <HelpKINode Title="about IProduct interface" Url="html/b2c112bb-e963-1c00-520c-67278f3b7e24.htm" />
+    <HelpKINode Title="methods" Url="html/186d2736-aa5f-2cb9-1083-dc3996eca064.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IProduct.Distribute method" Url="html/e6ce247f-6235-4844-21dc-6dd87debb6aa.htm" />
+  <HelpKINode Title="IProduct.GetBasePrice method" Url="html/c1cc22ca-ba56-27f5-56e5-95cd7d071da6.htm" />
+  <HelpKINode Title="Laptop class">
+    <HelpKINode Title="Laptop Class" Url="html/be5d6b3a-b6cb-0405-74f3-052ff04c4373.htm" />
+    <HelpKINode Title="about Laptop class" Url="html/be5d6b3a-b6cb-0405-74f3-052ff04c4373.htm" />
+    <HelpKINode Title="constructor" Url="html/51ed72ad-6a69-7280-803f-39f64981d5ff.htm" />
+    <HelpKINode Title="methods" Url="html/0ee5f411-8374-55d2-8f9c-5659bd36a84c.htm" />
+    <HelpKINode Title="properties" Url="html/a0623fd1-703d-1d63-f0e6-98a636d68fd7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Laptop.Describe method" Url="html/de986a29-8b15-3177-f5af-7888e5b949b7.htm" />
+  <HelpKINode Title="Laptop.Distribute method" Url="html/5544fe9b-98ff-a34e-0447-f2d7e123a1f7.htm" />
+  <HelpKINode Title="Laptop.GetBasePrice method" Url="html/e16fc841-ca6a-fe37-157c-676455a0e77c.htm" />
+  <HelpKINode Title="Laptop.GetOutput method" Url="html/b9357aec-d931-57c8-fbfc-ed54a81ba51b.htm" />
+  <HelpKINode Title="Laptop.Input method" Url="html/2faae040-d4e9-78d7-1cce-4aac19556258.htm" />
+  <HelpKINode Title="Laptop.Laptop constructor" Url="html/51ed72ad-6a69-7280-803f-39f64981d5ff.htm" />
+  <HelpKINode Title="Laptop.MadeIn property" Url="html/25c4179e-4b43-0862-70f6-fe87fd9a52df.htm" />
+  <HelpKINode Title="Laptop.MFG property" Url="html/e6717ef9-6b66-32bb-15d1-c18c07403779.htm" />
+  <HelpKINode Title="Laptop.Output method" Url="html/c42d2a2a-192a-2b91-ad97-d3a3cda9f0d2.htm" />
+  <HelpKINode Title="Laptop.Price property" Url="html/5c22fadd-6d01-2c08-63ee-f6bfecd593bc.htm" />
+  <HelpKINode Title="Laptop.PrintHeader method" Url="html/f8c62903-b46b-e1ed-44bf-d8dd64c078e1.htm" />
+  <HelpKINode Title="Laptop.QuantityOnHand property" Url="html/d5516fa6-fdd5-300a-7e41-2c5e2646eb29.htm" />
+  <HelpKINode Title="Laptop.ShowDate method" Url="html/dde4f142-952a-29ec-4f4d-842f4806eba0.htm" />
+  <HelpKINode Title="Laptop.ToRegExpression method" Url="html/29a52cd0-441e-0daa-e0ae-511485713ea7.htm" />
+  <HelpKINode Title="Laptop.ToString method" Url="html/1683ce66-ef68-10be-c869-3b452eb6826e.htm" />
+  <HelpKINode Title="Laptop.TotalPayment method" Url="html/5f01cda7-7900-9721-8201-bbe58f26c62f.htm" />
+  <HelpKINode Title="LaptopList class">
+    <HelpKINode Title="LaptopList Class" Url="html/1fff8453-5202-b267-8df7-1f22089d0443.htm" />
+    <HelpKINode Title="about LaptopList class" Url="html/1fff8453-5202-b267-8df7-1f22089d0443.htm" />
+    <HelpKINode Title="constructor" Url="html/85b95ed1-1cff-197d-62ae-dacd4bd61c24.htm" />
+    <HelpKINode Title="methods" Url="html/8e299b21-b105-72dd-4f4c-af94582ba6b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LaptopList property" Url="html/9d734ae6-5c9f-a22c-b4ef-d81e82a41c95.htm" />
+  <HelpKINode Title="LaptopList.AddFromFile method" Url="html/fece9bcf-fe2f-5d03-855c-0dc1056f8b00.htm" />
+  <HelpKINode Title="LaptopList.AddNewLaptop method" Url="html/4d331434-c516-64e2-f37b-40c0c5123799.htm" />
+  <HelpKINode Title="LaptopList.LaptopList constructor" Url="html/85b95ed1-1cff-197d-62ae-dacd4bd61c24.htm" />
+  <HelpKINode Title="LaptopList.Output method" Url="html/a6d12866-f6d3-73cd-2d86-8980be52f4b8.htm" />
+  <HelpKINode Title="LaptopList.Search method" Url="html/a51f2662-b7c2-fe20-cb24-2ab946082c4d.htm" />
+  <HelpKINode Title="LaptopList.ToList method" Url="html/b61ec249-8504-063e-02f9-a0b64ae1a152.htm" />
+  <HelpKINode Title="LaptopList.ToString method" Url="html/e5c5d332-e9cb-fe30-b9e6-e41619598a03.htm" />
+  <HelpKINode Title="LaptopList.WriteToFile method" Url="html/2253ceb7-b3b6-0ed2-a464-4effe78b4e59.htm" />
+  <HelpKINode Title="listLaptop field" Url="html/50b73215-c102-0543-fc8d-b5740e6a24e2.htm" />
+  <HelpKINode Title="MadeIn property" Url="html/25c4179e-4b43-0862-70f6-fe87fd9a52df.htm" />
+  <HelpKINode Title="Main method" Url="html/c9d830bb-f127-964a-632d-3d6159a8a08a.htm" />
+  <HelpKINode Title="Menu class">
+    <HelpKINode Title="Menu Class" Url="html/bb17d9c3-098e-e693-6ff9-0de1d14adacf.htm" />
+    <HelpKINode Title="about Menu class" Url="html/bb17d9c3-098e-e693-6ff9-0de1d14adacf.htm" />
+    <HelpKINode Title="constructor" Url="html/4a8c60cd-0d00-7ecb-4e4e-8c22d23b645c.htm" />
+    <HelpKINode Title="methods" Url="html/bda19f44-9b2d-191b-8d91-bdd0a8c1d941.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Menu.GetChoice method" Url="html/656b2638-def9-a504-d652-906ccd162596.htm" />
+  <HelpKINode Title="Menu.Menu constructor" Url="html/4a8c60cd-0d00-7ecb-4e4e-8c22d23b645c.htm" />
+  <HelpKINode Title="Menu.Output method" Url="html/cb077d4e-277e-083f-e012-ca3ec488a79a.htm" />
+  <HelpKINode Title="Menu.PrintHeader method" Url="html/0b81591c-51e1-970a-0946-77f69e9751d6.htm" />
+  <HelpKINode Title="Menu.printMenu method" Url="html/79ef40f0-5b5b-594e-937f-0d90a9b4893e.htm" />
+  <HelpKINode Title="Menu.printTitle method" Url="html/66518e0b-51eb-2e10-9866-944cb5339400.htm" />
+  <HelpKINode Title="MFG property" Url="html/e6717ef9-6b66-32bb-15d1-c18c07403779.htm" />
+  <HelpKINode Title="name field" Url="html/501e5b2f-53e2-f996-963e-46ae9e9449c7.htm" />
+  <HelpKINode Title="Name property" Url="html/19cff795-9adf-ff35-1bb1-efe4c4f4e45d.htm" />
+  <HelpKINode Title="Open method" Url="html/5006db30-21a1-b8cd-b7f5-831b553efe9a.htm" />
+  <HelpKINode Title="Output method">
+    <HelpKINode Title="CartItem.Output Method " Url="html/6114d6ff-d182-936d-5b09-d8c1158bc6d8.htm" />
+    <HelpKINode Title="Laptop.Output Method " Url="html/c42d2a2a-192a-2b91-ad97-d3a3cda9f0d2.htm" />
+    <HelpKINode Title="LaptopList.Output Method " Url="html/a6d12866-f6d3-73cd-2d86-8980be52f4b8.htm" />
+    <HelpKINode Title="Menu.Output Method " Url="html/cb077d4e-277e-083f-e012-ca3ec488a79a.htm" />
+    <HelpKINode Title="Product.Output Method " Url="html/cf2e70da-b360-b400-20e2-d4fea09bb733.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Price property" Url="html/5c22fadd-6d01-2c08-63ee-f6bfecd593bc.htm" />
+  <HelpKINode Title="PrintHeader method">
+    <HelpKINode Title="CartItem.PrintHeader Method " Url="html/0b62d730-1f91-1ca0-8d9f-7d581afe425e.htm" />
+    <HelpKINode Title="Laptop.PrintHeader Method " Url="html/f8c62903-b46b-e1ed-44bf-d8dd64c078e1.htm" />
+    <HelpKINode Title="Menu.PrintHeader Method " Url="html/0b81591c-51e1-970a-0946-77f69e9751d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="printMenu method" Url="html/79ef40f0-5b5b-594e-937f-0d90a9b4893e.htm" />
+  <HelpKINode Title="PrintReceipt method" Url="html/3529640a-8f5e-28fe-ece8-bb9cc95aa00e.htm" />
+  <HelpKINode Title="printTitle method" Url="html/66518e0b-51eb-2e10-9866-944cb5339400.htm" />
+  <HelpKINode Title="Product class">
+    <HelpKINode Title="Product Class" Url="html/3ac10482-e2ab-f39e-7f7d-b6dafee5ddf8.htm" />
+    <HelpKINode Title="about Product class" Url="html/3ac10482-e2ab-f39e-7f7d-b6dafee5ddf8.htm" />
+    <HelpKINode Title="constructor" Url="html/cc44adca-f16f-ec46-c63f-0f874c84c091.htm" />
+    <HelpKINode Title="fields" Url="html/4b171b35-13bd-c571-c9b1-59f6ebe7425b.htm" />
+    <HelpKINode Title="methods" Url="html/e33ef705-4779-22d1-e36e-52eeba5363ab.htm" />
+    <HelpKINode Title="properties" Url="html/5ea80fe3-ffbd-7b64-7269-1744e9f3dd47.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Product.Describe method" Url="html/fb934489-c596-720d-45b7-21033197f501.htm" />
+  <HelpKINode Title="Product.Input method" Url="html/ed9db103-0544-0461-6eb8-2cf1ecfb909b.htm" />
+  <HelpKINode Title="Product.name field" Url="html/501e5b2f-53e2-f996-963e-46ae9e9449c7.htm" />
+  <HelpKINode Title="Product.Name property" Url="html/19cff795-9adf-ff35-1bb1-efe4c4f4e45d.htm" />
+  <HelpKINode Title="Product.Output method" Url="html/cf2e70da-b360-b400-20e2-d4fea09bb733.htm" />
+  <HelpKINode Title="Product.Product constructor" Url="html/cc44adca-f16f-ec46-c63f-0f874c84c091.htm" />
+  <HelpKINode Title="Product.ShowDate method" Url="html/fcbcb3f3-878c-4e28-fc2b-c6b31d98a774.htm" />
+  <HelpKINode Title="Product.sku field" Url="html/750aeed7-5160-f3fd-a2a0-036aea79c52b.htm" />
+  <HelpKINode Title="Product.Sku property" Url="html/808394ed-617f-e535-167c-cd9053b2b24e.htm" />
+  <HelpKINode Title="Product.ToString method" Url="html/f53cfd79-3dda-9bcc-314d-c25247eef2d8.htm" />
+  <HelpKINode Title="Product.TotalPayment method" Url="html/59740c5f-157e-efa9-b3ba-6c5c051b3032.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/6722985f-a126-9dd8-21c4-c573a9f277a5.htm" />
+    <HelpKINode Title="about Program class" Url="html/6722985f-a126-9dd8-21c4-c573a9f277a5.htm" />
+    <HelpKINode Title="constructor" Url="html/42636731-f239-0725-ee7b-c39651510275.htm" />
+    <HelpKINode Title="fields" Url="html/f8158670-e541-5056-9cfc-40e8d256e0b6.htm" />
+    <HelpKINode Title="methods" Url="html/a5f2e5be-85c3-c1a3-038b-fd8f6a15c028.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.AdvanceMode method" Url="html/c12b9397-9f44-6e1d-9775-5bb25d33bbd4.htm" />
+  <HelpKINode Title="Program.listLaptop field" Url="html/50b73215-c102-0543-fc8d-b5740e6a24e2.htm" />
+  <HelpKINode Title="Program.Main method" Url="html/c9d830bb-f127-964a-632d-3d6159a8a08a.htm" />
+  <HelpKINode Title="Program.Program constructor" Url="html/42636731-f239-0725-ee7b-c39651510275.htm" />
+  <HelpKINode Title="Quantity property" Url="html/74e42542-9aaa-9ed1-03e6-aac193393423.htm" />
+  <HelpKINode Title="QuantityOnHand property" Url="html/d5516fa6-fdd5-300a-7e41-2c5e2646eb29.htm" />
+  <HelpKINode Title="Search method" Url="html/a51f2662-b7c2-fe20-cb24-2ab946082c4d.htm" />
+  <HelpKINode Title="ShowDate method">
+    <HelpKINode Title="Laptop.ShowDate Method " Url="html/dde4f142-952a-29ec-4f4d-842f4806eba0.htm" />
+    <HelpKINode Title="Product.ShowDate Method " Url="html/fcbcb3f3-878c-4e28-fc2b-c6b31d98a774.htm" />
+  </HelpKINode>
+  <HelpKINode Title="sku field" Url="html/750aeed7-5160-f3fd-a2a0-036aea79c52b.htm" />
+  <HelpKINode Title="Sku property" Url="html/808394ed-617f-e535-167c-cd9053b2b24e.htm" />
+  <HelpKINode Title="StartTransaction method" Url="html/4b8cbc62-538c-3986-790d-c97381b9be8f.htm" />
+  <HelpKINode Title="ToList method" Url="html/b61ec249-8504-063e-02f9-a0b64ae1a152.htm" />
+  <HelpKINode Title="ToRegExpression method" Url="html/29a52cd0-441e-0daa-e0ae-511485713ea7.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="CartItem.ToString Method " Url="html/843262a1-3708-3122-0290-1060e7d211dd.htm" />
+    <HelpKINode Title="Laptop.ToString Method " Url="html/1683ce66-ef68-10be-c869-3b452eb6826e.htm" />
+    <HelpKINode Title="LaptopList.ToString Method " Url="html/e5c5d332-e9cb-fe30-b9e6-e41619598a03.htm" />
+    <HelpKINode Title="Product.ToString Method " Url="html/f53cfd79-3dda-9bcc-314d-c25247eef2d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TotalPayment method">
+    <HelpKINode Title="Laptop.TotalPayment Method " Url="html/5f01cda7-7900-9721-8201-bbe58f26c62f.htm" />
+    <HelpKINode Title="Product.TotalPayment Method " Url="html/59740c5f-157e-efa9-b3ba-6c5c051b3032.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transaction class">
+    <HelpKINode Title="Transaction Class" Url="html/577982db-bc9a-9f48-ab89-0b378fc91185.htm" />
+    <HelpKINode Title="about Transaction class" Url="html/577982db-bc9a-9f48-ab89-0b378fc91185.htm" />
+    <HelpKINode Title="constructor" Url="html/0be5b673-6925-3dd8-f3b6-ea8b5870eeca.htm" />
+    <HelpKINode Title="methods" Url="html/938ebfae-4239-518b-dca7-caea32bc9f83.htm" />
+    <HelpKINode Title="properties" Url="html/baa1fdfd-464f-af40-ddf5-ff966974b226.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transaction.Cart property" Url="html/4f60026a-0793-c8a2-5077-f8e4326a3591.htm" />
+  <HelpKINode Title="Transaction.EndTransaction method" Url="html/8bab5c6b-6dac-b55f-24d8-bbd5c4653dff.htm" />
+  <HelpKINode Title="Transaction.ExportToFile method" Url="html/6bfa7376-25c5-4452-c52d-5483924f63ab.htm" />
+  <HelpKINode Title="Transaction.GetReceipt method" Url="html/a5be9fe9-81e1-5b10-04cb-5ecbf05e0906.htm" />
+  <HelpKINode Title="Transaction.LaptopList property" Url="html/9d734ae6-5c9f-a22c-b4ef-d81e82a41c95.htm" />
+  <HelpKINode Title="Transaction.PrintReceipt method" Url="html/3529640a-8f5e-28fe-ece8-bb9cc95aa00e.htm" />
+  <HelpKINode Title="Transaction.StartTransaction method" Url="html/4b8cbc62-538c-3986-790d-c97381b9be8f.htm" />
+  <HelpKINode Title="Transaction.Transaction constructor" Url="html/0be5b673-6925-3dd8-f3b6-ea8b5870eeca.htm" />
+  <HelpKINode Title="WriteToFile method" Url="html/2253ceb7-b3b6-0ed2-a464-4effe78b4e59.htm" />
+</HelpKI>

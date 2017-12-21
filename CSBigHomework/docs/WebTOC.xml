@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="38f2b19a-3fe7-4aec-a00b-b8b15bf37a45" Title="CSBigHomework" Url="html/546ad338-611a-5c99-e552-7be0d57694ca.htm">
+    <HelpTOCNode Id="e18f9622-e5bc-4b82-a9f1-e124ff534073" Title="CartItem Class" Url="html/7a4d5b31-1ddb-75d4-ddc9-b62941450986.htm">
+      <HelpTOCNode Id="2ec4b0f7-57e9-467b-8715-d006ad575e38" Title="CartItem Constructor " Url="html/4bbdf235-ad3c-eb1b-7c27-388b9298cc17.htm">
+        <HelpTOCNode Title="CartItem Constructor " Url="html/816af3b8-e3c1-2a51-7bb5-27b6621c06e6.htm" />
+        <HelpTOCNode Title="CartItem Constructor (Laptop, Int32)" Url="html/967a9c17-0404-8a44-13b6-cd4074ac8974.htm" />
+        <HelpTOCNode Title="CartItem Constructor (String, String, DateTime, Double, Int32, String, Int32)" Url="html/c5db78a5-bf30-7a7d-ff47-71b9229f00ea.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fec55a01-7bcd-41cb-9795-0c193ea224b8" Title="CartItem Properties" Url="html/2c69c939-13b2-af7f-0895-f41f60331db0.htm">
+        <HelpTOCNode Title="Quantity Property " Url="html/74e42542-9aaa-9ed1-03e6-aac193393423.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="99a48394-229e-4001-bb5f-08b750577717" Title="CartItem Methods" Url="html/3fdde92d-12ae-09cc-e82f-263a2e7d0784.htm">
+        <HelpTOCNode Title="GetOutput Method " Url="html/4c063d5e-bec6-7550-0dc0-57e641a930e7.htm" />
+        <HelpTOCNode Title="GetPrintHeader Method " Url="html/b43b34ec-ee3e-49a9-f0e3-c4471a809a11.htm" />
+        <HelpTOCNode Title="Output Method " Url="html/6114d6ff-d182-936d-5b09-d8c1158bc6d8.htm" />
+        <HelpTOCNode Title="PrintHeader Method " Url="html/0b62d730-1f91-1ca0-8d9f-7d581afe425e.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/843262a1-3708-3122-0290-1060e7d211dd.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4639428b-e3ea-4b20-9697-d53d30818b7e" Title="FileListViewer Class" Url="html/33336343-75c1-4993-7fc6-7c2fc0b9ddec.htm">
+      <HelpTOCNode Title="FileListViewer Constructor " Url="html/a9aba44c-bbd2-a846-b996-85455f4fe135.htm" />
+      <HelpTOCNode Id="7c53e328-765d-4763-af35-e2014b16d661" Title="FileListViewer Methods" Url="html/7f88cd53-430b-0788-f498-569413bac568.htm">
+        <HelpTOCNode Title="Open Method " Url="html/5006db30-21a1-b8cd-b7f5-831b553efe9a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a330fa13-6c40-41c1-892c-cc4f37f1c328" Title="IProduct Interface" Url="html/b2c112bb-e963-1c00-520c-67278f3b7e24.htm">
+      <HelpTOCNode Id="8161a22f-326d-44f1-84a4-ea046402f23c" Title="IProduct Methods" Url="html/186d2736-aa5f-2cb9-1083-dc3996eca064.htm">
+        <HelpTOCNode Title="Distribute Method " Url="html/e6ce247f-6235-4844-21dc-6dd87debb6aa.htm" />
+        <HelpTOCNode Title="GetBasePrice Method " Url="html/c1cc22ca-ba56-27f5-56e5-95cd7d071da6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b9044a78-680d-43aa-ae84-b6b2b1754d8f" Title="Laptop Class" Url="html/be5d6b3a-b6cb-0405-74f3-052ff04c4373.htm">
+      <HelpTOCNode Id="9c6da2ef-4994-4df5-8946-8e560bb60aab" Title="Laptop Constructor " Url="html/51ed72ad-6a69-7280-803f-39f64981d5ff.htm">
+        <HelpTOCNode Title="Laptop Constructor " Url="html/bd5d5634-f44c-72c8-d00f-732927c7163b.htm" />
+        <HelpTOCNode Title="Laptop Constructor (String, String, DateTime, Double, Int32, String)" Url="html/f2079ec5-a56f-08e8-4130-67047666e36f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d39fc7e1-6f56-47fc-a8d3-1913215481f3" Title="Laptop Properties" Url="html/a0623fd1-703d-1d63-f0e6-98a636d68fd7.htm">
+        <HelpTOCNode Title="MadeIn Property " Url="html/25c4179e-4b43-0862-70f6-fe87fd9a52df.htm" />
+        <HelpTOCNode Title="MFG Property " Url="html/e6717ef9-6b66-32bb-15d1-c18c07403779.htm" />
+        <HelpTOCNode Title="Price Property " Url="html/5c22fadd-6d01-2c08-63ee-f6bfecd593bc.htm" />
+        <HelpTOCNode Title="QuantityOnHand Property " Url="html/d5516fa6-fdd5-300a-7e41-2c5e2646eb29.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a1f82109-5edc-4819-9e62-8287582845a5" Title="Laptop Methods" Url="html/0ee5f411-8374-55d2-8f9c-5659bd36a84c.htm">
+        <HelpTOCNode Title="Describe Method " Url="html/de986a29-8b15-3177-f5af-7888e5b949b7.htm" />
+        <HelpTOCNode Title="Distribute Method " Url="html/5544fe9b-98ff-a34e-0447-f2d7e123a1f7.htm" />
+        <HelpTOCNode Title="GetBasePrice Method " Url="html/e16fc841-ca6a-fe37-157c-676455a0e77c.htm" />
+        <HelpTOCNode Title="GetOutput Method " Url="html/b9357aec-d931-57c8-fbfc-ed54a81ba51b.htm" />
+        <HelpTOCNode Title="Input Method " Url="html/2faae040-d4e9-78d7-1cce-4aac19556258.htm" />
+        <HelpTOCNode Title="Output Method " Url="html/c42d2a2a-192a-2b91-ad97-d3a3cda9f0d2.htm" />
+        <HelpTOCNode Title="PrintHeader Method " Url="html/f8c62903-b46b-e1ed-44bf-d8dd64c078e1.htm" />
+        <HelpTOCNode Title="ShowDate Method " Url="html/dde4f142-952a-29ec-4f4d-842f4806eba0.htm" />
+        <HelpTOCNode Title="ToRegExpression Method " Url="html/29a52cd0-441e-0daa-e0ae-511485713ea7.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/1683ce66-ef68-10be-c869-3b452eb6826e.htm" />
+        <HelpTOCNode Title="TotalPayment Method " Url="html/5f01cda7-7900-9721-8201-bbe58f26c62f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bf219b3e-0986-4c56-90ea-fbac169b34ac" Title="LaptopList Class" Url="html/1fff8453-5202-b267-8df7-1f22089d0443.htm">
+      <HelpTOCNode Title="LaptopList Constructor " Url="html/85b95ed1-1cff-197d-62ae-dacd4bd61c24.htm" />
+      <HelpTOCNode Id="ec65d7a9-8f46-4c85-b752-7c2550dd2edd" Title="LaptopList Methods" Url="html/8e299b21-b105-72dd-4f4c-af94582ba6b7.htm">
+        <HelpTOCNode Title="AddFromFile Method " Url="html/fece9bcf-fe2f-5d03-855c-0dc1056f8b00.htm" />
+        <HelpTOCNode Title="AddNewLaptop Method " Url="html/4d331434-c516-64e2-f37b-40c0c5123799.htm" />
+        <HelpTOCNode Title="Output Method " Url="html/a6d12866-f6d3-73cd-2d86-8980be52f4b8.htm" />
+        <HelpTOCNode Title="Search Method " Url="html/a51f2662-b7c2-fe20-cb24-2ab946082c4d.htm" />
+        <HelpTOCNode Title="ToList Method " Url="html/b61ec249-8504-063e-02f9-a0b64ae1a152.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/e5c5d332-e9cb-fe30-b9e6-e41619598a03.htm" />
+        <HelpTOCNode Title="WriteToFile Method " Url="html/2253ceb7-b3b6-0ed2-a464-4effe78b4e59.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="11922a37-a256-487e-a48a-b8161ecc2bb1" Title="Menu Class" Url="html/bb17d9c3-098e-e693-6ff9-0de1d14adacf.htm">
+      <HelpTOCNode Title="Menu Constructor " Url="html/4a8c60cd-0d00-7ecb-4e4e-8c22d23b645c.htm" />
+      <HelpTOCNode Id="662ccb8b-6e59-4dfb-b3b2-c568ab6b9d0a" Title="Menu Methods" Url="html/bda19f44-9b2d-191b-8d91-bdd0a8c1d941.htm">
+        <HelpTOCNode Title="GetChoice Method " Url="html/656b2638-def9-a504-d652-906ccd162596.htm" />
+        <HelpTOCNode Title="Output Method " Url="html/cb077d4e-277e-083f-e012-ca3ec488a79a.htm" />
+        <HelpTOCNode Title="PrintHeader Method " Url="html/0b81591c-51e1-970a-0946-77f69e9751d6.htm" />
+        <HelpTOCNode Title="printMenu Method " Url="html/79ef40f0-5b5b-594e-937f-0d90a9b4893e.htm" />
+        <HelpTOCNode Title="printTitle Method " Url="html/66518e0b-51eb-2e10-9866-944cb5339400.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="69365457-676b-451f-96d2-a6c088bce12a" Title="Product Class" Url="html/3ac10482-e2ab-f39e-7f7d-b6dafee5ddf8.htm">
+      <HelpTOCNode Id="fd22143a-eb6a-4b04-890f-583a6ab32347" Title="Product Constructor " Url="html/cc44adca-f16f-ec46-c63f-0f874c84c091.htm">
+        <HelpTOCNode Title="Product Constructor " Url="html/ed59c828-818c-697f-016b-2451529fb5f4.htm" />
+        <HelpTOCNode Title="Product Constructor (String, String)" Url="html/b658e8cc-8835-9044-5dd4-e9a7c92f8205.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7767e477-52d7-4629-a174-d1d808e7c69f" Title="Product Properties" Url="html/5ea80fe3-ffbd-7b64-7269-1744e9f3dd47.htm">
+        <HelpTOCNode Title="Name Property " Url="html/19cff795-9adf-ff35-1bb1-efe4c4f4e45d.htm" />
+        <HelpTOCNode Title="Sku Property " Url="html/808394ed-617f-e535-167c-cd9053b2b24e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a0541bd2-72c9-4f5b-abc4-65a87481b7c5" Title="Product Methods" Url="html/e33ef705-4779-22d1-e36e-52eeba5363ab.htm">
+        <HelpTOCNode Title="Describe Method " Url="html/fb934489-c596-720d-45b7-21033197f501.htm" />
+        <HelpTOCNode Title="Input Method " Url="html/ed9db103-0544-0461-6eb8-2cf1ecfb909b.htm" />
+        <HelpTOCNode Title="Output Method " Url="html/cf2e70da-b360-b400-20e2-d4fea09bb733.htm" />
+        <HelpTOCNode Title="ShowDate Method " Url="html/fcbcb3f3-878c-4e28-fc2b-c6b31d98a774.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/f53cfd79-3dda-9bcc-314d-c25247eef2d8.htm" />
+        <HelpTOCNode Title="TotalPayment Method " Url="html/59740c5f-157e-efa9-b3ba-6c5c051b3032.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a323f87d-1dc1-4a28-a965-f2d3085036bb" Title="Product Fields" Url="html/4b171b35-13bd-c571-c9b1-59f6ebe7425b.htm">
+        <HelpTOCNode Title="name Field" Url="html/501e5b2f-53e2-f996-963e-46ae9e9449c7.htm" />
+        <HelpTOCNode Title="sku Field" Url="html/750aeed7-5160-f3fd-a2a0-036aea79c52b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="505ab0d6-c522-4efb-ad36-5a069e0c868a" Title="Program Class" Url="html/6722985f-a126-9dd8-21c4-c573a9f277a5.htm">
+      <HelpTOCNode Title="Program Constructor " Url="html/42636731-f239-0725-ee7b-c39651510275.htm" />
+      <HelpTOCNode Id="c17c8882-3936-485a-9ef2-d77ab51d35f7" Title="Program Methods" Url="html/a5f2e5be-85c3-c1a3-038b-fd8f6a15c028.htm">
+        <HelpTOCNode Title="AdvanceMode Method " Url="html/c12b9397-9f44-6e1d-9775-5bb25d33bbd4.htm" />
+        <HelpTOCNode Title="Main Method " Url="html/c9d830bb-f127-964a-632d-3d6159a8a08a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="159bd45c-687d-40cc-a683-163dc48dc1b5" Title="Program Fields" Url="html/f8158670-e541-5056-9cfc-40e8d256e0b6.htm">
+        <HelpTOCNode Title="listLaptop Field" Url="html/50b73215-c102-0543-fc8d-b5740e6a24e2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6d0ac667-b0c6-43df-84f1-d612137851f0" Title="Transaction Class" Url="html/577982db-bc9a-9f48-ab89-0b378fc91185.htm">
+      <HelpTOCNode Id="e1f49668-e402-4289-afb9-02b1a499488b" Title="Transaction Constructor " Url="html/0be5b673-6925-3dd8-f3b6-ea8b5870eeca.htm">
+        <HelpTOCNode Title="Transaction Constructor " Url="html/837e4d82-4ea5-ed60-10e3-05cad2f9c9b0.htm" />
+        <HelpTOCNode Title="Transaction Constructor (LaptopList)" Url="html/b263c3e2-7eb7-8ce6-5185-6f06e41cae15.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="09af14a3-71fb-4d05-9dac-f91e4f353b95" Title="Transaction Properties" Url="html/baa1fdfd-464f-af40-ddf5-ff966974b226.htm">
+        <HelpTOCNode Title="Cart Property " Url="html/4f60026a-0793-c8a2-5077-f8e4326a3591.htm" />
+        <HelpTOCNode Title="LaptopList Property " Url="html/9d734ae6-5c9f-a22c-b4ef-d81e82a41c95.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0672706f-1618-4721-8399-3fffc8f1d610" Title="Transaction Methods" Url="html/938ebfae-4239-518b-dca7-caea32bc9f83.htm">
+        <HelpTOCNode Title="EndTransaction Method " Url="html/8bab5c6b-6dac-b55f-24d8-bbd5c4653dff.htm" />
+        <HelpTOCNode Title="ExportToFile Method " Url="html/6bfa7376-25c5-4452-c52d-5483924f63ab.htm" />
+        <HelpTOCNode Title="GetReceipt Method " Url="html/a5be9fe9-81e1-5b10-04cb-5ecbf05e0906.htm" />
+        <HelpTOCNode Title="PrintReceipt Method " Url="html/3529640a-8f5e-28fe-ece8-bb9cc95aa00e.htm" />
+        <HelpTOCNode Title="StartTransaction Method " Url="html/4b8cbc62-538c-3986-790d-c97381b9be8f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
