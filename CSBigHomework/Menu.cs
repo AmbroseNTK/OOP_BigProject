@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSBigHomework
 {
+
+    /// <summary>
+    /// Tạo Menu
+    /// </summary>
     class Menu
     {
         /// <summary>

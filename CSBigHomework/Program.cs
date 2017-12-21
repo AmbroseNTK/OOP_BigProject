@@ -42,7 +42,10 @@ namespace CSBigHomework
                         Console.WriteLine("Enter file's directory:");
                         string dir = Console.ReadLine();
                         listLaptop.AddFromFile(dir);
+                        Laptop.PrintHeader();
+                        Console.BackgroundColor = ConsoleColor.Blue;
                         listLaptop.Output();
+                        Console.BackgroundColor = ConsoleColor.Black;
                         break;
                     case 3:
                         //Chế độ mở rộng nhiều chức năng
@@ -77,10 +80,7 @@ namespace CSBigHomework
                     case 1: //Hiển thị danh sách
                         Laptop.PrintHeader();
                         Console.BackgroundColor = ConsoleColor.Blue;
-                        foreach (Laptop lap in listLaptop)
-                        {
-                            lap.Output();
-                        }
+                        listLaptop.Output();
                         Console.BackgroundColor = ConsoleColor.Black;
                         break;
                     case 2: //Lưu ra file
@@ -96,10 +96,9 @@ namespace CSBigHomework
                         List<string> listLaptopStr = new List<string>();
                         foreach (Laptop lap in listLaptop)
                         {
-                            listLaptopStr.Add(lap.ToString());
+                            listLaptopStr.Add(lap.GetOutput());
                         }
                         listLaptopStr.Add("CANCEL DELETE FUNCTION !!!");
-                        Laptop.PrintHeader();
                         int ind = Menu.printMenu("Deletion list", listLaptopStr, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow);
                         if (ind == listLaptopStr.Count - 1)
                             break;
@@ -109,7 +108,7 @@ namespace CSBigHomework
                         listLaptopStr = new List<string>();
                         foreach (Laptop lap in listLaptop)
                         {
-                            listLaptopStr.Add(lap.ToString());
+                            listLaptopStr.Add(lap.GetOutput());
                         }
                         listLaptopStr.Add("CANCEL EDIT FUNCTION !!!");
                         Laptop.PrintHeader();

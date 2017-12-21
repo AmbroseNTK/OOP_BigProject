@@ -65,7 +65,10 @@ namespace CSBigHomework
         /// </summary>
         public void Output()
         {
-            Console.WriteLine(this.ToString());
+            foreach (Laptop laptop in this)
+            {
+                Console.WriteLine(String.Format("|{0,12}|{1,15}|{2,15}|{3,8}|{4,5}|{5,10}", laptop.Sku, laptop.Name, laptop.MFG.ToShortDateString(), laptop.Price, laptop.QuantityOnHand, laptop.MadeIn));
+            }
         }
         /// <summary>
         /// Tạo chuỗi dữ liệu

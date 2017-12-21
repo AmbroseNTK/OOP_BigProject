@@ -71,7 +71,7 @@ namespace CSBigHomework
                     List<string> listLaptopStr = new List<string>();
                     foreach (Laptop lap in result)
                     {
-                        listLaptopStr.Add(lap.ToString());
+                        listLaptopStr.Add(lap.GetOutput());
                     }
                     listLaptopStr.Add("CANCEL TRANSACTION !!!");
                     int ind = Menu.printMenu("Sell item(s)", listLaptopStr, ConsoleColor.White, ConsoleColor.Black, ConsoleColor.Blue, ConsoleColor.Yellow);
@@ -148,6 +148,9 @@ namespace CSBigHomework
             result += "------------------------\nTotal = " + total;
             return result;
         }
+        /// <summary>
+        /// In hóa đơn thanh toán
+        /// </summary>
         public void PrintReceipt()
         {
             string receipt = GetReceipt();
